@@ -1,0 +1,233 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+*{
+    box-sizing: border-box;
+}
+/* Styling header*/
+.top{
+    display:flex;
+}
+.top p{
+    position: absolute;
+    top:10px;
+    right:0;
+    display: inline-block;
+    font-family: Open Sans;
+    font-size: 1.3rem;
+}
+.login{
+    display:inline-block;
+}
+.btn:hover{
+    background-color: rgb(75, 168, 75);
+}
+.top h1{ 
+    font-family: Righteous;
+    color:rgb(86, 190, 86);
+}
+.top h1 span:hover{
+    color:rgb(86, 190, 86);
+}
+.btn{
+    margin-left:35px;
+    background-color: rgb(86, 190, 86);
+    color:aliceblue;
+    font-size: 1.2rem;
+    border:none;
+    border-radius: 5px;
+    padding:2px;
+}
+
+.top h1 span{
+    color:rgb(105, 105, 105)
+}
+/* *************************************************************** */
+/* This is navigation bar */
+.nav{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    background-color:  rgb(101 101 101);
+    height: 44px;
+    position: sticky;
+    top: 0;
+    
+    
+}
+.nav div{
+    display:inline-block;
+}
+.nav a{
+    display:inline-block;
+    text-decoration: none;
+    padding-right: 1.8rem;
+    color:white; 
+    font-family: Open Sans;
+    
+    /* margin-top: 0%; */
+    
+}
+#visible{
+    display:none;
+}
+
+
+@media screen and (max-width:1246px){
+    .nav .hide5{
+        display:none;
+    }
+}
+@media screen and (max-width:1113px){
+    .nav .hide4{
+        display:none;
+    }
+}
+@media screen and (max-width:1051px){
+    .nav .hide3{
+        display:none;
+    } 
+}
+@media screen and (max-width:953px){
+    .nav .hide2{
+        display:none;
+    }
+}
+@media screen and (max-width:891px){
+    .nav .hide1{
+        display:none;
+    }
+}
+@media screen and (max-width:768px){
+    .nav .hide6{
+        display:none;
+    }
+    .panigation1,.panigation2{
+        padding:0.4rem 1.3rem;
+    }
+}
+@media screen and (max-width:623px){
+    .nav .hide7{
+        display:none;
+    }
+}
+@media screen and (max-width:482px){
+    .nav .hide8{
+        display:none;
+    }
+}
+@media screen and (max-width:676px){
+    .login span{
+        display:none;
+    }
+}
+@media screen and (max-width:345px){
+    .nav .hide9{
+        display:none;
+    }
+}
+@media screen and (max-width:297px){
+    header .top{
+        display:flex;
+        flex-direction: row;
+    }
+}
+/* ************************************************************************************************** /
+/* Styling the main content of the page */
+.main{
+    float:left;
+}
+/* Styling the menu*/
+
+.list{
+    /* width : 22%; */
+    height : 100%;
+    padding:20px;
+    overflow-y: scroll;
+    position: absolute;
+    top:110px;
+    left:0;
+    bottom:0;
+    background: rgb(228 228 228 / 72%);
+    margin-top: 16px;
+}
+.list a{
+    display:block;
+    text-decoration: none;
+    color: black;
+    font-family: Open Sans;
+    font-weight: bold;
+}
+/********************************************************/
+/*Styling the main content*/
+.content{
+    margin-left: 15rem;
+    font-family:Padauk;
+    
+}
+.headings{
+    font-size: 3rem;
+    letter-spacing: 1px; 
+    font-weight: 100;
+    margin-bottom: 2px;
+}
+/* Styling the panigation bar*/
+.panigation1,.panigation2{
+    text-decoration: none;
+    font-size:1rem;
+    background-color: rgb(86, 190, 86);
+    padding:0.1rem 0.8rem;
+    color:aliceblue;
+}
+a.panigation2{
+    z-index:-1;
+}
+.panigation1{
+    float:left;
+}
+.panigation2{
+    float:right;
+    position:absolute;
+    right:0;
+}
+.panigation1:hover,.panigation2:hover{
+    background-color: rgb(75, 168, 75);
+}
+/****************************************************************/
+
+#greenbutton{
+    background-color:rgb(19, 196, 19);
+    border:none;
+    height:40px;
+    font-size: 15px;
+    color: aliceblue;
+    letter-spacing: 2px;
+}
+#greenbutton:hover{
+    background-color: rgb(75, 168, 75);
+}
+.intro{
+    margin-top:30px;
+    display:block;
+    height: 300px;
+    background-color: rgba(204, 253, 204, 0.986);
+    padding-bottom: 20px;
+}
+@media screen and (max-width:998px){
+    .list{
+        display: none;
+    }
+    .content{
+        margin:10px;
+    }
+    #visible{
+        display:inline-block;
+    }
+    
+}
+@media screen and (max-width:512px){
+    #cssimage{
+        display:none;
+    }
+}
